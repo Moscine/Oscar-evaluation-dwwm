@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+{% block body %}
+
+<link rel="stylesheet" href="/css/styleHome.css">
+
+<h1>{{title}}</h1>
+
+
+<img class="img1" id="img1" src="https://thumb.canalplus.pro/http/unsafe/%7BresolutionXY%7D/smart/creativemedia-image.canalplus.pro/content/0001/23/3354a9dbde8c7327e5283b8d8d98c2996692db06.jpeg">
+
+<br><br><br>
+
+{% for row in gallerys |batch(3) %}
+    <div class="row mb-5">
+
+        {% for gallery in row %}
+
+            <div class="col-md-4 mb-5">
+                <img src={{gallery.photo}}>
+            </div>
+        {% endfor %}    
+    </div> 
+{% endfor %}
+
+{% endblock %}

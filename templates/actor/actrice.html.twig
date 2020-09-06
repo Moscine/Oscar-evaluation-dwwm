@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<link rel="stylesheet" href="/css/style.css">
+
+<h1>{{title}}</h1>
+
+{% for row in actrices |batch(3) %}
+    <div class="row mb-5">
+
+        {% for actrice in row %}
+
+            <div class="col-md-4">
+                <img src={{actrice.photo}}>
+                <br><br>
+                <p> <strong>{{actrice.nom}}</strong> qui a {{actrice.age}} et qui a remporter {{actrice.oscar}}</p>
+                
+            </div>
+
+        {% endfor %}    
+    </div> 
+{% endfor %}
+
+<span class="badge badge-pill badge-dark"><a href="/">Back</a></span>
+
+{% endblock %}

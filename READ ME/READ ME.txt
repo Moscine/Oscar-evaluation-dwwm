@@ -1,0 +1,12 @@
+Bonjour; 
+
+- Lancer le serveur Symfony via la console
+- Dans votre console entrez la commande : php bin/console doctrine:database:create , la base de données "Oscar" sera crée.
+- Ouvrir PhpMyAdmin
+- Onglet importé
+- Choisir un fichier (Prendre le fichier Oscar.sql et l'importer)
+- Exécuter 
+
+Bonne visite sur ce site d'une grande qualité ! 
+
+HANSSALY Moscine
