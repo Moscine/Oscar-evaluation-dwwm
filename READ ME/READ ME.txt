@@ -1,5 +1,6 @@
 Bonjour; 
 
+- Avant de faire quoi que ce soit ouvrir powersheel sur le dossier du projet et ecrire " composer update "
 - Lancer le serveur Symfony via la console
 - Dans votre console entrez la commande : php bin/console doctrine:database:create , la base de données "Oscar" sera crée.
 - Ouvrir PhpMyAdmin
